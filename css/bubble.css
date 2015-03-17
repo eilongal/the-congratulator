@@ -1,0 +1,85 @@
+.bubble 
+{
+position: relative;
+width: 785px;
+height: 450px;
+padding: 20px;
+background: #FFFFFF;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+border: #3E9BFF solid 2px;
+}
+
+@media(max-width:784px) {
+.bubble {
+width: 96%;
+}
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 15px 15px;
+border-color: #FFFFFF transparent;
+display: block;
+width: 0;
+z-index: 1;
+margin-left: -15px;
+top: -15px;
+left: 50%;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 0 16px 16px;
+border-color: #3E9BFF transparent;
+display: block;
+width: 0;
+z-index: 0;
+margin-left: -16px;
+top: -18px;
+left: 50%;
+}
+
+hr {
+
+border: none;
+border-top: dashed 2px #B2CCCC;
+}
+
+.text {
+	font-size: 24px;
+	font-family: 'Alef Hebrew';
+}
+.text-sm {
+	font-size: 18px;
+	font-family: 'Alef Hebrew';
+}
+.text123 {
+	font-size: 16px;
+	font-family: 'Alef Hebrew';
+}
+
+footer a {
+	color: #333333;
+	  -o-transition:.5s;
+	  -ms-transition:.5s;
+	  -moz-transition:.5s;
+	  -webkit-transition:.5s;
+	  transition:.5s;
+	  text-decoration: none !important;
+}
+
+html, body {
+	font-family: 'Alef Hebrew';
+}
+
+a:hover {
+	text-decoration: none;
+}
